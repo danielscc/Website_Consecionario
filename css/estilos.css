@@ -1,0 +1,496 @@
+* {
+    font-family: 'Roboto', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main > img {
+    width: 100%;
+}
+
+body {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:    "header header"
+                            "main aside"
+                            "footer footer";
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+main {
+    grid-area: main;
+}
+
+.main-container {
+    padding: 1% 1.3%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3, h4, h5 {
+    font-size: 23px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: bold;
+    padding-bottom: 0.4%;
+}
+
+h4, h5, h6 {
+    margin: 0;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+
+/*♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦ Header & Nav ♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦*/
+
+
+/* Estilos para el encabezado */
+
+header {
+    grid-area: header;
+    display: flex;
+    background-color: black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.headercar {
+    padding-left: 3em;
+    padding-right: 5em;
+    height: 100px;
+}
+
+nav {
+    background-color: black ;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    background-color: black;
+    justify-content:left;
+    padding-top: 20px;
+}
+
+nav ul li i {
+    cursor: pointer;
+}
+
+nav ul li input {
+    width: 250px;
+}
+
+nav ul li:nth-last-child(1){
+    margin-left: auto;
+    padding-right: 10%;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: flow;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+.enl-nav {
+    color: white;
+    padding: 6px 6px;
+    transition: ease-out 0.3s;
+    outline: none;
+    position: relative;
+    margin: 10px;
+    /* border: 2px solid white; */
+    z-index: 1;
+}
+
+.enl-nav:hover {
+    color: black;
+    cursor: pointer;
+
+}
+
+.enl-nav:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: white;
+}
+
+.enl-nav:hover::before {
+    transition: 0.5 all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    border-radius: 3px;
+}
+
+nav ul a{
+    font-family: inter, sans-serif;
+    font-weight: bold;
+    color: white;
+    display: block;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+
+
+/*♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦ Main ♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦*/
+
+/* INDEX */
+
+.indexcars-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexcars-child img {
+    height: 400px;
+}
+
+
+figure {
+    display: flex;
+    flex-flow: column;
+}
+
+figcaption {
+    padding-top: 0;
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    text-align: center;
+}
+
+
+/* MISION */
+
+
+dt {
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+dd {
+    padding-bottom: 7px;
+}
+
+.valores-container {
+    display: flex;
+}
+
+.valores-img img{
+    height:300px;
+}
+.valores-img {
+padding: 12% 2%;
+}
+
+
+/* CONTACTO */
+
+label, .inputNoCheckbox, textarea {
+    display: flex;
+    margin: 1em 1em;
+    width: 90%;
+}
+
+.inputNoCheckbox {
+    padding: 0.3%;
+}
+
+a.button5{
+    display:inline-block;
+    background-color: #156D9A;
+    padding: 0.3em 1.2em;
+    /* margin:0 0.1em 0.1em 0; */
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    margin: 1em 1em;
+    }
+
+    a.button5:hover{
+        border-color: rgb(172, 172, 172);
+    }
+
+    .formpriv div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+
+
+    
+
+
+/* AUTOS */
+
+/*Estilos para catalogo autos*/
+
+.autos-container {
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+
+.autos-child h2 {
+    padding-bottom: 8%;
+    font-size: 50px;
+}
+
+
+.autos-grandchild {
+    cursor: pointer;
+}
+
+.autos-grandchild:hover {
+    color: red;
+}
+
+.autos-child img {
+    border-radius: 10%;
+    padding-bottom: 3%;
+    height: 14em;
+
+}
+
+.autos-container>div>div {
+    padding-bottom: 15%;
+}
+
+.autos-container>div>div:nth-last-child(1) {
+    padding-bottom: 10%;
+}
+
+
+
+
+/* Accesorios */
+
+
+.imgcentro {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgcentro > img {
+    width: 350px;
+}
+
+
+.accesories-container {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+
+.accesories-child h2 {
+    padding-bottom: 10%;
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+}
+
+.accesories-grandchild {
+    cursor: pointer;
+    padding-bottom: 2.5%;
+}
+
+.accesories-grandchild:hover {
+    color: red;
+}
+
+
+.accesories-container>div>div {
+    padding-bottom: 50%;
+}
+
+.accesories-container>div>div:nth-last-child(1) {
+    padding-bottom: 10%;
+}
+
+/* Botones */
+
+
+
+a.button4{
+    display:inline-block;
+    background-color:#083D77;
+    padding: 0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    margin-top: 3%;
+    }
+
+    a.button4:hover{
+        border-color: rgb(172, 172, 172);
+    }
+
+/*♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦ Aside ♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦*/
+
+/* Estilos para el aside GENERALES */
+
+aside {
+    grid-area: aside;
+    background-color: #000000e7;
+    display: flex;
+    color: #E6E6E6;
+}
+
+aside a {
+    color: white;
+}
+
+.divaside {
+    padding: 2.5em;
+    font-size: 16px;
+}
+
+.divaside-ico {
+    padding: 2.5em;
+}
+
+.divaside-ico li {
+    font-size: 20px;
+}
+
+.divaside-ico i {
+    font-size: 25px;
+}
+
+.divaside ul li, .divaside-ico ul li{
+    padding-bottom: 1em;
+}
+
+.divaside .tablediv {
+    padding-top: 1em;
+
+}
+
+.tabla-comubstible {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tabla-comubstible tr:first-child {
+    background-color: #083D77;
+    color: #ffffff;
+    text-align: center;
+}
+
+.tabla-comubstible th,
+.tabla-comubstible td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.tabla-comubstible tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+.tabla-comubstible tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tabla-comubstible tbody tr:last-of-type {
+    border-bottom: 2px solid #083D77;
+}
+
+.tabla-comubstible tbody tr.active-row {
+    font-weight: bold;
+    color: #083D77;
+}
+
+
+/*Estilos para el footer*********************************************************************/
+
+
+footer {
+    padding: 0em 3em;
+    grid-area: footer;
+    background-color: black ;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.foot-redes {
+    width: 93vw;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 1em;
+}
+
+.foot-address {
+    width: 93vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.foot-redes i {
+    font-size: 35px;
+    padding-right: 0.3em;
+}
+
